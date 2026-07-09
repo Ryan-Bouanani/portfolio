@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200" fill="none">
+  <text x="320" y="118" text-anchor="middle" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="104" letter-spacing="1" fill="#ffffff">NAEVO</text>
+  <g fill="none" stroke-width="12" stroke-linecap="round">
+    <path d="M178 150 Q210 143 242 141" stroke="#3b5bdb"/>
+    <path d="M242 141 Q275 139 305 148" stroke="#6f42e0"/>
+    <path d="M305 148 Q335 152 362 143" stroke="#e8413a"/>
+    <path d="M362 143 Q400 134 432 130" stroke="#f0862a"/>
+    <path d="M432 130 Q465 126 494 120" stroke="#f6d15c"/>
+  </g>
+</svg>

@@ -164,3 +164,7 @@ a{color:inherit;text-decoration:none}
 .wa-float:hover{transform:scale(1.08)}
 .wa-float svg{width:30px;height:30px}
 @media(max-width:720px){.wa-float{right:16px;bottom:16px;width:52px;height:52px}.wa-float svg{width:27px;height:27px}}
+
+/* ---------- logo Naevo ---------- */
+.brand-logo{height:40px;width:auto;display:block}
+@media(max-width:720px){.brand-logo{height:34px}}
