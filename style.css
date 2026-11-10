@@ -155,3 +155,213 @@
   .featured-copy { padding-inline: 20px; }
   .project-card .project-info { padding-inline: 20px; }
 }
+
+/* ------------------------------------------------------------------
+   Couleurs Naevo — une palette vivante, des surfaces unies et lisibles.
+   Le cadrage des captures et la structure des projets ne changent pas.
+------------------------------------------------------------------- */
+:root {
+  --bg: #faf8f2;
+  --paper: #ffffff;
+  --text: #172923;
+  --muted: #52625c;
+  --line: #d9dfd5;
+  --accent: #b74229;
+  --dark: #173e36;
+  --terracotta-light: #f7e5dc;
+  --mint-light: #e3f0e8;
+  --blue-light: #e6edf4;
+  --sand-light: #faebd4;
+}
+body { background: var(--bg); }
+.site-header {
+  position: sticky;
+  background: rgba(255,250,245,.97);
+  border-bottom-color: #e5d6cc;
+}
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4px;
+  background: var(--accent);
+}
+.brand-name span,
+.footer-brand span { color: var(--accent); }
+.nav a:hover { color: var(--accent); }
+.nav-contact {
+  background: var(--dark);
+  color: #fff;
+  border-color: var(--dark);
+  border-radius: 5px;
+}
+.nav .nav-contact:hover { color: #fff; background: #265e52; }
+
+/* Accueil : une zone légèrement teintée au lieu d'une page uniforme. */
+.hero {
+  position: relative;
+  margin-top: clamp(24px, 4vw, 55px);
+  margin-bottom: clamp(18px, 3vw, 42px);
+  padding: clamp(44px, 7vw, 95px) clamp(24px, 5.5vw, 80px);
+  background: #e9f1e9;
+  border-left: 6px solid #34816e;
+  border-radius: 0 14px 14px 0;
+}
+.hero .kicker { color: #235d50; }
+.status-dot { background: var(--accent); }
+.hero h1 em { color: var(--accent); }
+.hero .lead { color: #40594f; }
+.hero-note {
+  display: inline-flex;
+  max-width: 100%;
+  width: fit-content;
+  margin-top: clamp(28px, 4vw, 48px);
+  padding: 14px 19px;
+  background: #f5e2cf;
+  border-radius: 5px;
+  color: #634b3a;
+}
+.hero-note-rule { background: var(--accent); }
+.btn-primary {
+  background: var(--dark);
+  color: #fff;
+  border-radius: 5px;
+}
+.btn-primary:hover { background: #286a5a; }
+.text-link:hover { color: var(--accent); }
+
+/* Bande de compétences au caractère plus affirmé. */
+.discipline { background: #173e36; border-top: 4px solid #db9c6f; }
+.discipline-inner strong { color: #e9bb96; }
+.discipline p span { color: #e1ac81; }
+
+/* Titres des sections et index conservés très lisibles. */
+.eyebrow { color: var(--accent); }
+#realisations .section-heading h2::after,
+#services .section-heading h2::after {
+  content: "";
+  display: block;
+  width: 54px;
+  height: 4px;
+  margin-top: 22px;
+  background: #d98156;
+  border-radius: 2px;
+}
+.project-index { color: #8f351f; }
+.project-top-label .project-type { color: #82432f; }
+.featured-project, .project-card {
+  border-color: #ced8d0;
+  border-radius: 10px;
+  box-shadow: 0 8px 28px rgba(23,62,54,.045);
+}
+.project-top {
+  background: var(--mint-light);
+  border-bottom: 1px solid #d4e2d8;
+  border-left: 5px solid #3b836e;
+}
+.featured-media { background: #e8f1ea; }
+.project-card:nth-child(1) .project-top {
+  background: var(--terracotta-light);
+  border-left-color: #ba644d;
+  border-bottom-color: #ead4ca;
+}
+.project-card:nth-child(2) .project-top {
+  background: var(--blue-light);
+  border-left-color: #5c789c;
+  border-bottom-color: #d7e0e9;
+}
+.project-card:nth-child(3) .project-top {
+  background: var(--sand-light);
+  border-left-color: #bd8640;
+  border-bottom-color: #f0dfc0;
+}
+.project-card:nth-child(4) .project-top {
+  background: var(--mint-light);
+  border-left-color: #498b70;
+}
+.project-card:nth-child(1) .project-shot { background: #f9eee8; }
+.project-card:nth-child(2) .project-shot { background: #edf1f6; }
+.project-card:nth-child(3) .project-shot { background: #f9eddd; }
+.project-card:nth-child(4) .project-shot { background: #edf4ee; }
+.project-card .project-info { border-top-color: #dae0d9; }
+
+/* La partie applications a sa propre teinte, sans effet néon. */
+.mobile-feature {
+  background: #dfeef0;
+  border-top: 4px solid #2f786e;
+  border-bottom: 1px solid #bdd9d8;
+}
+.mobile-copy .eyebrow { color: #226257; }
+.mobile-copy .tech span { color: #a43a26; }
+.mobile-shot img {
+  object-fit: contain;
+  aspect-ratio: auto;
+  background: #e6eff0;
+  box-shadow: 16px 16px 0 #bcd7d3;
+}
+
+/* Des surfaces doucement colorées, pas quatre blocs blancs identiques. */
+.services-grid { border-top: 0; gap: 15px; }
+.services-grid article {
+  padding: 27px 23px 30px;
+  background: var(--terracotta-light);
+  border-top: 3px solid #bb6b52;
+  border-radius: 6px;
+}
+.services-grid article:nth-child(2) {
+  background: var(--mint-light);
+  border-color: #4c907a;
+}
+.services-grid article:nth-child(3) {
+  background: var(--blue-light);
+  border-color: #7193b2;
+}
+.services-grid article:nth-child(4) {
+  background: var(--sand-light);
+  border-color: #c08a4b;
+}
+.services-grid article span { color: #8f3526; }
+.services-grid h3 { margin-top: 24px; }
+.about-section {
+  background: #173e36;
+  border-top: 5px solid #c67d59;
+}
+.about-inner .eyebrow { color: #f2b58d; }
+.about-inner > div:last-child p { color: #e2ede6; }
+.about-inner .text-link { color: #f4c19f; }
+
+/* Appel à l'action final plus visible. */
+.contact-section {
+  background: #f7e9de;
+  border-top: 5px solid #c67956;
+  border-radius: 12px;
+  padding-left: clamp(20px, 5vw, 66px);
+  padding-right: clamp(20px, 5vw, 66px);
+  margin-top: clamp(38px, 6vw, 90px);
+  margin-bottom: clamp(38px, 6vw, 90px);
+}
+.contact-section .eyebrow { color: #9a442d; }
+.contact-actions .btn-primary { background: #ad3e27; }
+.contact-actions .btn-primary:hover { background: #8f321f; }
+.footer { border-top-color: #dfd7cc; }
+@media (max-width: 760px) {
+  .site-header { position: static; }
+  .hero {
+    margin-top: 17px;
+    margin-bottom: 18px;
+    border-left-width: 4px;
+    border-radius: 0 9px 9px 0;
+    padding: 43px 22px 45px;
+  }
+  .hero-note { padding: 12px 13px; gap: 11px; }
+  .nav-contact { border: 1px solid var(--dark); padding: 7px 10px; }
+  .project-top { border-left-width: 4px; }
+  .mobile-shot img { box-shadow: 8px 8px 0 #bcd7d3; }
+  .services-grid { gap: 12px; }
+  .services-grid article { padding: 23px 19px; }
+  .services-grid article:last-child { border-bottom: 0; }
+  .contact-section { padding-top: 56px; padding-bottom: 55px; }
+}
+@media (max-width: 440px) {
+  .nav-contact { padding: 6px 8px; }
+}
