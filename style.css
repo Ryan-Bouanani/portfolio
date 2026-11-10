@@ -13,3 +13,29 @@
 @media(max-width:720px){.wrap{width:calc(100% - 36px)}.header-inner{min-height:74px;flex-wrap:wrap;padding:12px 0}.brand-name{font-size:27px}.brand-sub{font-size:9px}.nav{gap:16px;font-size:12px;flex-wrap:wrap}.nav-contact{padding:7px 10px}.hero{grid-template-columns:1fr;padding-top:60px;padding-bottom:65px;gap:50px}.hero h1{font-size:clamp(44px,11vw,64px)}.hero-photo{transform:none}.photo-caption{font-size:10px}.discipline-inner{flex-direction:column;align-items:start;justify-content:center;padding-block:24px;gap:7px}.discipline p{font-size:12px;line-height:1.9}.discipline p span{margin:0 6px}.section{padding-top:70px;padding-bottom:70px}.section-heading{grid-template-columns:1fr;gap:14px}.featured-project{grid-template-columns:1fr}.featured-copy{padding:28px}.featured-media{min-height:0}.featured-media img{aspect-ratio:auto}.projects-grid{grid-template-columns:1fr;gap:18px}.project-shot{height:auto;aspect-ratio:16/10}.project-shot--mobile{aspect-ratio:4/5}.project-info{padding:25px}.project-info>p:not(.project-type){min-height:0}.mobile-inner{grid-template-columns:1fr;padding-block:65px;gap:30px}.mobile-shot img{box-shadow:9px 9px 0 #d6d9d3}.services-grid{grid-template-columns:1fr 1fr;gap:15px}.services-grid article{padding:20px 0}.services-grid h3{font-size:17px;margin-top:18px}.about-inner{grid-template-columns:1fr;gap:25px;padding-block:65px}.contact-inner{grid-template-columns:1fr;gap:24px}.contact-actions{align-items:stretch}.footer-inner{flex-wrap:wrap;padding:25px 0;min-height:0}.footer-inner p{order:3;width:100%;margin:0}}
 @media(max-width:440px){.nav{gap:13px}.nav a{font-size:11px}.nav-contact{border:0;padding:0}.hero-actions{gap:20px}.hero h1{font-size:43px}.services-grid{grid-template-columns:1fr}.services-grid article{border-bottom:1px solid var(--line)}.photo-caption{flex-direction:column;gap:3px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+
+/* Le projet OS Énergies est déjà illustré dans le hero.
+   Ici, présentation éditoriale sans capture répétée. */
+.featured-project--text {
+  grid-template-columns: minmax(0, 1.2fr) minmax(260px, .8fr);
+  align-items: center;
+}
+.featured-details {
+  border-left: 1px solid var(--line);
+  margin: 34px 0;
+  padding: 18px clamp(26px, 4vw, 56px);
+}
+.featured-details .project-list {
+  margin: 0;
+}
+@media (max-width: 720px) {
+  .featured-project--text {
+    grid-template-columns: 1fr;
+  }
+  .featured-details {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+    margin: 0 28px 24px;
+    padding: 24px 0 6px;
+  }
+}
